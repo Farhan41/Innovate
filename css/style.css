@@ -7,11 +7,21 @@ ul,li,a{
     color: black;
     list-style: none;
 }
+:root{
+    --primary-color:#FF5538;
+    --text-color: #29313D;
+    --primary-text: 'Open Sans', sans-serif;
+    --secondary-text: 'Poppins', sans-serif;
+    --rare-text: 'Nunito', sans-serif;
+}
 #navbar{
     display: flex;
     justify-content: center;
+    font-family: var(--primary-text);
 }
 #navbar .container{
+    position: absolute;
+    z-index: 1;
     width: 1320px;
 }
 
@@ -26,15 +36,70 @@ ul,li,a{
     gap: 20px;
 }
 #navbar .logo{
-    padding-left: 16px;
+    padding-left: 15%;
 }
 #navbar .button{
-    padding-right: 16px;
+    padding-right: 15%;
 }
 #navbar .button button{
-    padding: 10px;
-    border-radius: 20px;
+    padding: 14px 28px;
+    border-radius: 25px;
     border: none;
     background-color:#FF5538 ;
     color: white;
+}
+
+/* Banner */
+#banner{
+    display: flex;
+    justify-content: center;
+    background: url(/images/banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 250px;
+    padding-bottom: 400px;
+}
+#banner .container{
+    position: relative;
+    width: 1320px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.banner_content{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: var(--primary-text);
+   
+}
+.banner_content h1{
+    font-weight: 700;
+    font-size: 40px ;
+}
+.banner_content p{
+    padding-top: 15px;
+}
+
+#banner .button{
+   padding-top: 20px;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   gap: 15px;
+   
+}
+#banner .button button{
+    padding: 14px 28px;
+    border-radius: 25px;
+    border: none;
+    background-color:#FF5538 ;
+    color: white;
+    
+}
+#banner .button button:last-child{
+    background-color:white ;
+    color:#FF5538;
+    border: 1px solid #FF5538;
+    padding-left: 20px;
 }
