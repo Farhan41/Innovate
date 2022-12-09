@@ -303,3 +303,85 @@ ul,li,a{
 #work .wp1 {
     padding-bottom: 30px;
 }
+
+/* Count-part */
+#count{
+    background: url(/images/Rectangle\ 75.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top:180px;
+    padding-bottom: 180px;
+}
+#count .container{
+    width:1320px;
+}
+#count .count-wrapper{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+#count .box{
+    display: flex;
+    justify-content: center;
+    width:39%;
+    flex-wrap: wrap;
+    gap:25px;
+
+}
+
+#count .content{
+    width:50%;
+    
+}
+#count .count-box{
+    padding: 74px 54px;
+    text-align: center;
+    box-sizing: border-box;
+}
+#count .count-box h4{
+    font-size: 40px;
+    font-family: var(--secondary-text);
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+#count .count-box p{
+    font-size: 18px;
+    font-family: var(--rare-text);
+    font-weight: 400;
+    color: var(--text-color);
+}
+#count .content{
+
+}
+#count .content h3{
+    font-family: var(--secondary-text);
+    font-size: 48px;
+    font-weight: 600;
+    color: var(--text-color);
+    padding-bottom: 20px;
+    padding-right:100px;
+    text-transform: capitalize;
+}
+#count .content p {
+    font-family: var(--rare-text);
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--text-color);
+    line-height: 36px;
+    padding-bottom: 54px;
+    padding-right:140px;
+    text-align: justify;
+}
+
+#count .content a{
+    font-family: var(--rare-text);
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    background-color: var(--primary-color);
+    padding: 14px 28px;
+    border-radius: 18px;
+}
