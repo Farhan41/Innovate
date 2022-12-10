@@ -339,6 +339,7 @@ ul,li,a{
     padding: 74px 54px;
     text-align: center;
     box-sizing: border-box;
+    background-color: #fff;
 }
 #count .count-box h4{
     font-size: 40px;
@@ -562,4 +563,90 @@ ul,li,a{
     color: #29313D;
     opacity: 0.8;
     
+}
+/* Footer */
+#Footer .container{
+    width: 1320px;
+}
+#Footer .footer-wrapper{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 140px;
+}
+#Footer .footer-wrapper .part-one{
+    width: 40%;
+}
+#Footer .footer-wrapper .part-two{
+    width: 15%;
+}
+#Footer .footer-wrapper .part-three{
+    width: 15%;
+}
+#Footer .footer-wrapper .part-four{
+    width: 15%;
+}
+
+#Footer .footer-wrapper .part-one p{
+    font-family: var(--rare-text);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 34.2px;
+    color: var(--text-color);
+}
+#Footer .footer-wrapper .common h3{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 140%;
+    /* identical to box height, or 34px */
+    text-transform: capitalize;
+    color: #29313D;
+    padding-bottom: 48px;
+}
+
+#Footer .footer-wrapper .common p{
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 120%;
+    /* identical to box height, or 24px */
+    text-transform: capitalize;
+    color: #29313D;
+    padding-bottom: 30px;
+    opacity: 0.8;
+    
+
+}
+#Footer .footer-wrapper .part-one p{
+    padding-top: 44px;
+    padding-right: 80px;
+    text-align: justify;
+}
+.footer-bottom-wrapper{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.footer-bottom-wrapper p{
+    font-family: 'Nunito';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 180%;
+/* or 32px */
+
+text-transform: capitalize;
+
+color: #29313D;
+
+opacity: 0.9;
+}
+.bottom-right .right-part{
+    display: flex;
+    justify-content: center;
+    gap:60px;
 }
