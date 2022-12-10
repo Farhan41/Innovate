@@ -353,9 +353,7 @@ ul,li,a{
     font-weight: 400;
     color: var(--text-color);
 }
-#count .content{
 
-}
 #count .content h3{
     font-family: var(--secondary-text);
     font-size: 48px;
@@ -384,4 +382,34 @@ ul,li,a{
     background-color: var(--primary-color);
     padding: 14px 28px;
     border-radius: 18px;
+}
+
+/* companies part */
+#companies .container{
+    width: 1320px;
+}
+#companies h2{
+    text-align: center;
+    font-family: var(--secondary-text);
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 67.2px;
+    padding-right: 216px;
+    padding-left: 216px;
+    padding-bottom: 60px;
+    padding-top: 120px;
+}
+#companies .companies-wrapper{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#companies .companies-box{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 49px 41px ;
+    background-color: #FDF9F8;
+    padding-bottom: 120px;
 }
