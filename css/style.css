@@ -411,5 +411,94 @@ ul,li,a{
     gap: 5px;
     padding: 49px 41px ;
     background-color: #FDF9F8;
-    padding-bottom: 120px;
+    margin-bottom: 120px;
 }
+
+/* Customers Part */
+
+#customer .container{
+    width: 1320px;
+}
+
+.customer-wrapper{
+    display:flex;
+    justify-content: space-around;
+    
+}
+.customer-left{
+    width: 45%;
+}
+.customer-left h3{
+    font-family: var(--secondary-text);
+    font-weight: 600;
+    font-size: 48px;
+    color: var(--text-color);
+    text-transform: capitalize;
+    padding-top: 139px;
+}
+.customer-left p{
+    font-family: var(--rare-text);
+    font-weight: 400;
+    font-size: 20px;
+    color: var(--text-color);
+    line-height: 36px;
+    margin-bottom: 60px;
+    text-align: justify;
+    
+}
+
+.customer-right{
+    width: 45%;;
+}
+.customer-right .background {
+    width: 501px;
+    height: 557px;
+    background-color: #FF5538;
+    margin-top: 120px;
+    border-radius: 30px;
+    margin-bottom: 120px;
+    margin-left: 50px;
+   
+}
+
+.customer-box{
+    display: flex;
+    justify-content: start;
+    gap: 28px;
+}
+
+.customer-box .box-item{
+ width: 100px;
+ height: 100px;
+ background-color: #FF5538;
+ border-radius: 20px;
+ margin-top: 60px;
+ margin-bottom: 60px;
+}
+
+.customer-left .arrow{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.customer-left .arrow .left{
+    background-color:  #FFDDD7;
+    padding:25px;
+}
+.customer-left .arrow .right{
+    background-color: var(--primary-color);
+    padding:25px;
+}
+.customer-left .arrow h4{
+    font-family: var(--primary-text);
+    color: var(--text-color);
+    font-size: 36px;
+    font-weight: 600;
+    
+}
+.arrow-wrapper{
+    display: flex;
+    gap: 24px;
+}
+
