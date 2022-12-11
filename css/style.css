@@ -7,6 +7,12 @@ ul,li,a{
     color: black;
     list-style: none;
 }
+
+.container{
+    width: 1320px;
+    margin: 0 auto;
+}
+
 :root{
     --primary-color:#FF5538;
     --text-color: #29313D;
@@ -14,100 +20,110 @@ ul,li,a{
     --secondary-text: 'Poppins', sans-serif;
     --rare-text: 'Nunito', sans-serif;
 }
-#navbar{
-    display: flex;
-    justify-content: center;
-    font-family: var(--primary-text);
-}
-#navbar .container{
-    
+
+/* navbar css part  */
+nav{
+    padding-top: 30px;
     position: absolute;
-    z-index: 1;
-    width: 1320px;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
 
-#navbar .nav_wrapper{
+.nav_wrapper{
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
 }
-#navbar .menu ul{
-    display: flex;
-    gap: 20px;
+/* .logo{
+    width: 20%;
 }
-
-#navbar .button button{
-    padding: 14px 28px;
-    border-radius: 25px;
-    border: none;
-    background-color:#FF5538 ;
-    color: white;
+.menu{
+    width: 60%;
 }
-
-/* Banner */
-#banner{
+.button{
+    width: 20%;
+} */
+.menu ul {
     display: flex;
     justify-content: center;
-    background: url("/images/banner.png");
+}
+
+.menu ul li a{
+    font-family: var(--primary-text);
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: 18px;
+    color: var(--text-color);
+    margin: 0 24px;
+}
+
+.menu ul li a i{
+    margin-left: 8px;
+}
+
+.button{
+    text-align: right;
+}
+
+.button button{
+    padding: 14px 28px;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 18px;
+    font-family: var(--rare-text);
+    font-weight: 600;
+    font-size: 18px;
+    color: #fff;
+}
+
+
+/* banner part css */
+#banner{
+    background: url(../images/banner.png);
     background-repeat: no-repeat;
     background-size: cover;
-    padding-top: 250px;
+    padding-top: 400px;
     padding-bottom: 400px;
-
 }
 
-#banner .container{
-    position: relative;
-    width: 1320px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-}
 .banner_content{
-    display: flex;
-    flex-direction: column;
     text-align: center;
-    font-family: var(--primary-text);
-   
 }
 .banner_content h1{
+    font-family: 'Poppins';
     font-weight: 700;
-    font-size: 40px ;
+    font-size: 64px;
+    line-height: 130%;
+    /* or 83px */
+
+    text-align: center;
+    text-transform: capitalize;
+
+    color: #29313D;
+    padding-left: 250px;
+    padding-right: 250px;
+    margin-bottom: 24px     ;
 }
 .banner_content p{
-    padding-top: 15px;
+    font-family: 'Nunito';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 200%;
+    /* or 36px */
+    text-align: center;
+    text-transform: capitalize;
+    color: #29313D;
+    padding-left: 350px;
+    padding-right: 350px;
 }
 
-#banner .button{
-   padding-top: 20px;
-   display: flex;
-   flex-direction: row;
-   justify-content: center;
-   gap: 15px;
-   
-}
-#banner .button button{
-    padding: 14px 28px;
-    border-radius: 25px;
-    border: none;
-    background-color:#FF5538 ;
-    color: white;
-    
-}
-#banner .button button:last-child{
-    background-color:white ;
-    color:#FF5538;
-    border: 1px solid #FF5538;
-    padding-left: 30px;
-    
-}
 /* About part */
 
-#about .container{
+/* #about .container{
     
     width: 1320px;
-}
+} */
 #about .container .about-item{
     width: 420px;
     padding: 40px 46px 40px 30px;
@@ -133,8 +149,8 @@ ul,li,a{
 }
 
 #about{
-    display: flex;
-    justify-content: center;
+    /* display: flex;
+    justify-content: center; */
 }
 
 #about .about-wrapper{
@@ -142,16 +158,17 @@ ul,li,a{
     justify-content: space-between;
     gap: 20px;
     position: relative;
-    top: -350px;
+    top: -273px;
 }
 
 /* Digital part */
+
 #digital{
     position: relative;
 }
-#digital .container{
+/* #digital .container{
     width: 1320px;
-}
+} */
 
 #digital .digital-heading h4{
     font-family: var(--secondary-text);
@@ -225,9 +242,9 @@ ul,li,a{
 #work{
     padding-top: 600px;
 }
-#work .container{
+/* #work .container{
     width: 1320px;
-}
+} */
 #work .heading-wrapper{
     display: flex;
     justify-content: space-between;
@@ -306,16 +323,16 @@ ul,li,a{
 
 /* Count-part */
 #count{
-    background: url(/images/Rectangle\ 75.png);
+    background: url(../images/Rectangle\ 75.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     padding-top:180px;
     padding-bottom: 180px;
 }
-#count .container{
+/* #count .container{
     width:1320px;
-}
+} */
 #count .count-wrapper{
     display: flex;
     justify-content: space-between;
@@ -386,9 +403,9 @@ ul,li,a{
 }
 
 /* companies part */
-#companies .container{
+/* #companies .container{
     width: 1320px;
-}
+} */
 #companies h2{
     text-align: center;
     font-family: var(--secondary-text);
@@ -417,9 +434,9 @@ ul,li,a{
 
 /* Customers Part */
 
-#customer .container{
+/* #customer .container{
     width: 1320px;
-}
+} */
 
 .customer-wrapper{
     display:flex;
@@ -511,9 +528,9 @@ ul,li,a{
     padding: 100px 90px 100px 100px;
 }
 
-#project .container{
+/* #project .container{
     width: 1320px;
-}
+} */
 .project-top{
     display:flex;
     justify-content: space-between;
@@ -565,9 +582,9 @@ ul,li,a{
     
 }
 /* Footer */
-#Footer .container{
+/* #Footer .container{
     width: 1320px;
-}
+} */
 #Footer .footer-wrapper{
     display: flex;
     justify-content: space-between;
